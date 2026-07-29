@@ -1,0 +1,51 @@
+/* ============================================================
+   TIAGO FAVARI · SPACING, RADII, SHADOW, LAYOUT TOKENS
+   Generous editorial whitespace. Corners are essentially square —
+   the brand frames imagery like prints, not app cards.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4 */
+  --space-2:  0.5rem;   /* 8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  3rem;     /* 48 */
+  --space-8:  4rem;     /* 64 */
+  --space-9:  6rem;     /* 96 */
+  --space-10: 8rem;     /* 128 */
+
+  /* ---- Radii (near-square; prints, not pills) ---- */
+  --radius-none: 0;
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-pill: 999px;   /* only for true badges/avatars */
+
+  /* ---- Hairline border widths ---- */
+  --border-w-hair: 1px;
+  --border-w-rule: 1.5px;
+
+  /* ---- Shadow (whisper-soft, warm) ---- */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(11,11,11,0.04), 0 1px 1px rgba(11,11,11,0.03);
+  --shadow-md: 0 8px 24px rgba(11,11,11,0.07), 0 2px 6px rgba(11,11,11,0.05);
+  --shadow-lg: 0 24px 60px rgba(11,11,11,0.12), 0 6px 16px rgba(11,11,11,0.06);
+  --shadow-print: 0 18px 40px rgba(11,11,11,0.16);  /* framed photo lift */
+
+  /* ---- Layout ---- */
+  --container-max: 1200px;
+  --container-wide: 1440px;
+  --container-text: 680px;   /* prose measure */
+  --gutter: clamp(1.25rem, 5vw, 4rem); /* @kind spacing */
+
+  /* ---- Motion (calm, editorial — no bounce) ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-base: 240ms; /* @kind other */
+  --dur-slow: 520ms; /* @kind other */
+}

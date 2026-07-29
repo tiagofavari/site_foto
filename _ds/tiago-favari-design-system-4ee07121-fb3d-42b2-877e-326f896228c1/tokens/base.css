@@ -1,0 +1,70 @@
+/* ============================================================
+   TIAGO FAVARI · BASE & UTILITIES
+   Light element resets + a small set of brand text utilities.
+   These are conveniences; components stay self-contained.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background: var(--surface-paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---- Brand text roles ---- */
+.tf-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-display-medium);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+.tf-display-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: var(--fw-display-regular);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+
+/* The signature wide-tracked uppercase label */
+.tf-label {
+  font-family: var(--font-label);
+  font-weight: var(--fw-sans-medium);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--text-secondary);
+}
+.tf-label-loose { letter-spacing: var(--tracking-label-loose); }
+
+.tf-lead {
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  color: var(--text-secondary);
+}
+
+/* Wordmark helper: upright + italic mix */
+.tf-wordmark {
+  font-family: var(--font-display);
+  font-weight: var(--fw-display-medium);
+  letter-spacing: var(--tracking-tight);
+}
+.tf-wordmark em {
+  font-style: italic;
+  font-weight: var(--fw-display-regular);
+}
+
+/* Thin brand rule */
+.tf-rule {
+  border: none;
+  border-top: var(--border-w-hair) solid var(--border-hairline);
+  margin: var(--space-5) 0;
+}
+
+::selection { background: var(--ink-900); color: var(--paper); }

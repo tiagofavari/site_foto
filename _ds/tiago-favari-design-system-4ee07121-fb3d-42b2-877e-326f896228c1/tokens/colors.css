@@ -1,0 +1,61 @@
+/* ============================================================
+   TIAGO FAVARI · COLOR TOKENS
+   Monochrome editorial palette — warm cream paper + near-black ink.
+   No chromatic accent: the brand lives in light, contrast and paper.
+   ============================================================ */
+
+:root {
+  /* ---- Base ramp (warm neutral, paper → ink) ---- */
+  --white:    #FFFFFF;
+  --paper:    #F2EFE8;  /* signature cream — primary canvas */
+  --ink-100:  #EAE6DC;  /* deeper paper, panels */
+  --ink-200:  #DAD4C7;  /* hairline-on-light, dividers */
+  --ink-300:  #BDB6A8;  /* disabled text, faint marks */
+  --ink-400:  #948D80;  /* muted captions */
+  --ink-500:  #6B655B;  /* secondary text */
+  --ink-600:  #443F38;  /* strong secondary */
+  --ink-700:  #2A2824;  /* near-ink surfaces */
+  --ink-800:  #161513;  /* ink surface (off-black) */
+  --ink-900:  #0B0B0B;  /* signature ink — text & dark canvas */
+
+  /* ---- Translucent marks (for layering over photos) ---- */
+  --ink-veil-12: rgba(11, 11, 11, 0.12);
+  --ink-veil-24: rgba(11, 11, 11, 0.24);
+  --ink-veil-48: rgba(11, 11, 11, 0.48);
+  --ink-veil-72: rgba(11, 11, 11, 0.72);
+  --paper-veil-12: rgba(242, 239, 232, 0.12);
+  --paper-veil-24: rgba(242, 239, 232, 0.24);
+  --paper-veil-72: rgba(242, 239, 232, 0.72);
+
+  /* ---- Semantic: surfaces ---- */
+  --surface-paper:  var(--paper);
+  --surface-panel:  var(--ink-100);
+  --surface-white:  var(--white);
+  --surface-ink:    var(--ink-900);
+  --surface-ink-soft: var(--ink-800);
+
+  /* ---- Semantic: text ---- */
+  --text-primary:   var(--ink-900);
+  --text-secondary: var(--ink-500);
+  --text-muted:     var(--ink-400);
+  --text-faint:     var(--ink-300);
+  --text-on-ink:    var(--paper);
+  --text-on-ink-muted: var(--ink-400);
+
+  /* ---- Semantic: lines & borders ---- */
+  --border-hairline:   var(--ink-veil-12);
+  --border-strong:     var(--ink-veil-24);
+  --border-on-ink:     var(--paper-veil-24);
+  --rule-ink:          var(--ink-900);
+
+  /* ---- Semantic: interactive (monochrome) ---- */
+  --action-ink:        var(--ink-900);
+  --action-ink-hover:  var(--ink-700);
+  --action-paper:      var(--paper);
+  --action-paper-hover:var(--white);
+
+  /* ---- Status (kept warm & restrained) ---- */
+  --status-positive: #4E5A3E;  /* olive */
+  --status-warning:  #8A6A2E;  /* bronze */
+  --status-danger:   #7A3A2E;  /* terracotta-brown */
+}
